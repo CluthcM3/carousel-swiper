@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 const img = [
   {
@@ -60,7 +60,7 @@ const SwiperCarousel = () => {
             bulletActiveClass: "swiper-pagination-bullet-active",
           }}
           direction="horizontal"
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           slideClass="swiper-slide"
           slideActiveClass="swiper-slide-active"
         >
