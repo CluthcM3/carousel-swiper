@@ -51,7 +51,11 @@ const SwiperCarousel = () => {
             },
           }}
           loop={true}
-          autoplay={true}
+          autoplay={{
+            delay: 1000,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
             type: "bullets",
